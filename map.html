@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1f9bc21227544cebe09ea83fa0806b3c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1f9bc21227544cebe09ea83fa0806b3c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1f9bc21227544cebe09ea83fa0806b3c = L.map(
+                "map_1f9bc21227544cebe09ea83fa0806b3c",
+                {
+                    center: [83.7434, 18.5618],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_eb8548024d03285c349c75732f392728 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 2, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1f9bc21227544cebe09ea83fa0806b3c);
+        
+    
+            var marker_2e5d1acdf55202114cf29b5be48e5ce3 = L.marker(
+                [83.7434, 18.5618],
+                {}
+            ).addTo(map_1f9bc21227544cebe09ea83fa0806b3c);
+        
+    
+            var icon_180ad657671b9c8b8e9aacc28d1b25c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2e5d1acdf55202114cf29b5be48e5ce3.setIcon(icon_180ad657671b9c8b8e9aacc28d1b25c7);
+        
+    
+        var popup_5f41ef26617789fec5507aba5fd041b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be14b516be2523af7fe573519788260b = $(`<div id="html_be14b516be2523af7fe573519788260b" style="width: 100.0%; height: 100.0%;">SRIKAKULAM,ANDHRA PRADESH,Latitude     83.7434 Longitude    18.5618 Name: 0, dtype: object</div>`)[0];
+                popup_5f41ef26617789fec5507aba5fd041b8.setContent(html_be14b516be2523af7fe573519788260b);
+            
+        
+
+        marker_2e5d1acdf55202114cf29b5be48e5ce3.bindPopup(popup_5f41ef26617789fec5507aba5fd041b8)
+        ;
+
+        
+    
+    
+            var circle_8dec70db684f590d55a3e6f32924a44f = L.circle(
+                [83.7434, 18.5618],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_1f9bc21227544cebe09ea83fa0806b3c);
+        
+    
+        var popup_7d242b84d0f8b94a77584069ad5c9701 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba066986b241d574e74c3e3785d69d73 = $(`<div id="html_ba066986b241d574e74c3e3785d69d73" style="width: 100.0%; height: 100.0%;">SRIKAKULAM,ANDHRA PRADESH</div>`)[0];
+                popup_7d242b84d0f8b94a77584069ad5c9701.setContent(html_ba066986b241d574e74c3e3785d69d73);
+            
+        
+
+        circle_8dec70db684f590d55a3e6f32924a44f.bindPopup(popup_7d242b84d0f8b94a77584069ad5c9701)
+        ;
+
+        
+    
+    
+            var marker_b0382b72e3d009da44d923e2dedeed87 = L.marker(
+                [83.7228, 18.5968],
+                {}
+            ).addTo(map_1f9bc21227544cebe09ea83fa0806b3c);
+        
+    
+            var icon_e0475f099575e15f23d6c6f34af8c8e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b0382b72e3d009da44d923e2dedeed87.setIcon(icon_e0475f099575e15f23d6c6f34af8c8e5);
+        
+    
+        var popup_2f8fe59e17b0c043308578ed319ef458 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba314f98d8e342c113e090de8325fbd3 = $(`<div id="html_ba314f98d8e342c113e090de8325fbd3" style="width: 100.0%; height: 100.0%;">SRIKAKULAM,ANDHRA PRADESH,Latitude     83.7228 Longitude    18.5968 Name: 1, dtype: object</div>`)[0];
+                popup_2f8fe59e17b0c043308578ed319ef458.setContent(html_ba314f98d8e342c113e090de8325fbd3);
+            
+        
+
+        marker_b0382b72e3d009da44d923e2dedeed87.bindPopup(popup_2f8fe59e17b0c043308578ed319ef458)
+        ;
+
+        
+    
+    
+            var circle_0858003c0002faf32f0eb556ab422ad5 = L.circle(
+                [83.7228, 18.5968],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_1f9bc21227544cebe09ea83fa0806b3c);
+        
+    
+        var popup_ccb82b3b9d3a62aadeddadc72d1a03a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_369e0366e68c7a5b310842cf02f605f6 = $(`<div id="html_369e0366e68c7a5b310842cf02f605f6" style="width: 100.0%; height: 100.0%;">SRIKAKULAM,ANDHRA PRADESH</div>`)[0];
+                popup_ccb82b3b9d3a62aadeddadc72d1a03a0.setContent(html_369e0366e68c7a5b310842cf02f605f6);
+            
+        
+
+        circle_0858003c0002faf32f0eb556ab422ad5.bindPopup(popup_ccb82b3b9d3a62aadeddadc72d1a03a0)
+        ;
+
+        
+    
+    
+            var marker_1624b6a85a23e7e8bddbf4598e73dd85 = L.marker(
+                [83.7057, 18.6339],
+                {}
+            ).addTo(map_1f9bc21227544cebe09ea83fa0806b3c);
+        
+    
+            var icon_66337b2e4171d14a11dfb60ceee60d09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1624b6a85a23e7e8bddbf4598e73dd85.setIcon(icon_66337b2e4171d14a11dfb60ceee60d09);
+        
+    
+        var popup_214391d3c1e599b61f1f5ca6d6810de5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d9aec37414132b808e588e1248a476a = $(`<div id="html_8d9aec37414132b808e588e1248a476a" style="width: 100.0%; height: 100.0%;">SRIKAKULAM,ANDHRA PRADESH,Latitude     83.7057 Longitude    18.6339 Name: 2, dtype: object</div>`)[0];
+                popup_214391d3c1e599b61f1f5ca6d6810de5.setContent(html_8d9aec37414132b808e588e1248a476a);
+            
+        
+
+        marker_1624b6a85a23e7e8bddbf4598e73dd85.bindPopup(popup_214391d3c1e599b61f1f5ca6d6810de5)
+        ;
+
+        
+    
+    
+            var circle_00a49c6c5f4b17fa6f0297acab098f58 = L.circle(
+                [83.7057, 18.6339],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_1f9bc21227544cebe09ea83fa0806b3c);
+        
+    
+        var popup_25655e62e627e0aa33e29581c0670d8c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_efd0c7245c5576523b34f07edbff6ef1 = $(`<div id="html_efd0c7245c5576523b34f07edbff6ef1" style="width: 100.0%; height: 100.0%;">SRIKAKULAM,ANDHRA PRADESH</div>`)[0];
+                popup_25655e62e627e0aa33e29581c0670d8c.setContent(html_efd0c7245c5576523b34f07edbff6ef1);
+            
+        
+
+        circle_00a49c6c5f4b17fa6f0297acab098f58.bindPopup(popup_25655e62e627e0aa33e29581c0670d8c)
+        ;
+
+        
+    
+    
+            var marker_f5182ca9438980d6db707f59fac7109c = L.marker(
+                [83.7654, 18.6303],
+                {}
+            ).addTo(map_1f9bc21227544cebe09ea83fa0806b3c);
+        
+    
+            var icon_fdc92491c045f0f5c28b90a426f9a7d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f5182ca9438980d6db707f59fac7109c.setIcon(icon_fdc92491c045f0f5c28b90a426f9a7d1);
+        
+    
+        var popup_c295381d008f97bfc095c5b2486d051c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a06f3f0c3605284afc5939ae9f53f742 = $(`<div id="html_a06f3f0c3605284afc5939ae9f53f742" style="width: 100.0%; height: 100.0%;">SRIKAKULAM,ANDHRA PRADESH,Latitude     83.7654 Longitude    18.6303 Name: 3, dtype: object</div>`)[0];
+                popup_c295381d008f97bfc095c5b2486d051c.setContent(html_a06f3f0c3605284afc5939ae9f53f742);
+            
+        
+
+        marker_f5182ca9438980d6db707f59fac7109c.bindPopup(popup_c295381d008f97bfc095c5b2486d051c)
+        ;
+
+        
+    
+    
+            var circle_07b561c76c54cd5cea5e7d5e4e7ee0d4 = L.circle(
+                [83.7654, 18.6303],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_1f9bc21227544cebe09ea83fa0806b3c);
+        
+    
+        var popup_5f72a80738685a47913aa6a407c0e4bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_debbfdfbe82a8fb703b694a1cc0d8490 = $(`<div id="html_debbfdfbe82a8fb703b694a1cc0d8490" style="width: 100.0%; height: 100.0%;">SRIKAKULAM,ANDHRA PRADESH</div>`)[0];
+                popup_5f72a80738685a47913aa6a407c0e4bd.setContent(html_debbfdfbe82a8fb703b694a1cc0d8490);
+            
+        
+
+        circle_07b561c76c54cd5cea5e7d5e4e7ee0d4.bindPopup(popup_5f72a80738685a47913aa6a407c0e4bd)
+        ;
+
+        
+    
+    
+            var marker_a1513e5a902db7b6535e7aa19a1beafa = L.marker(
+                [83.7619, 18.5294],
+                {}
+            ).addTo(map_1f9bc21227544cebe09ea83fa0806b3c);
+        
+    
+            var icon_8a1555e88ec670ac1f68867aa8cce81d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a1513e5a902db7b6535e7aa19a1beafa.setIcon(icon_8a1555e88ec670ac1f68867aa8cce81d);
+        
+    
+        var popup_e627700151c73795e7f9f38fbc25ad39 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ab74dc40f0e79acb69100259ff3c3d1 = $(`<div id="html_8ab74dc40f0e79acb69100259ff3c3d1" style="width: 100.0%; height: 100.0%;">SRIKAKULAM,ANDHRA PRADESH,Latitude     83.7619 Longitude    18.5294 Name: 4, dtype: object</div>`)[0];
+                popup_e627700151c73795e7f9f38fbc25ad39.setContent(html_8ab74dc40f0e79acb69100259ff3c3d1);
+            
+        
+
+        marker_a1513e5a902db7b6535e7aa19a1beafa.bindPopup(popup_e627700151c73795e7f9f38fbc25ad39)
+        ;
+
+        
+    
+    
+            var circle_4b597bb8a02289ee8148129c51c626b2 = L.circle(
+                [83.7619, 18.5294],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_1f9bc21227544cebe09ea83fa0806b3c);
+        
+    
+        var popup_9ff4d24540dfb9b6ffbbb9de46e5c2f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e13086b393880bc4c5ac1a0a77c2cc3 = $(`<div id="html_9e13086b393880bc4c5ac1a0a77c2cc3" style="width: 100.0%; height: 100.0%;">SRIKAKULAM,ANDHRA PRADESH</div>`)[0];
+                popup_9ff4d24540dfb9b6ffbbb9de46e5c2f6.setContent(html_9e13086b393880bc4c5ac1a0a77c2cc3);
+            
+        
+
+        circle_4b597bb8a02289ee8148129c51c626b2.bindPopup(popup_9ff4d24540dfb9b6ffbbb9de46e5c2f6)
+        ;
+
+        
+    
+    
+            var marker_658e592b9db9d70f7e4c4abf953824ab = L.marker(
+                [83.7714, 18.591],
+                {}
+            ).addTo(map_1f9bc21227544cebe09ea83fa0806b3c);
+        
+    
+            var icon_8690c6ba0e5179fd93ae283b22dfbd0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_658e592b9db9d70f7e4c4abf953824ab.setIcon(icon_8690c6ba0e5179fd93ae283b22dfbd0c);
+        
+    
+        var popup_9998788a47eed9a4a0acf28e349b86a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe22bfbc31172f15f27e4533eeda560a = $(`<div id="html_fe22bfbc31172f15f27e4533eeda560a" style="width: 100.0%; height: 100.0%;">SRIKAKULAM,ANDHRA PRADESH,Latitude     83.7714 Longitude     18.591 Name: 5, dtype: object</div>`)[0];
+                popup_9998788a47eed9a4a0acf28e349b86a3.setContent(html_fe22bfbc31172f15f27e4533eeda560a);
+            
+        
+
+        marker_658e592b9db9d70f7e4c4abf953824ab.bindPopup(popup_9998788a47eed9a4a0acf28e349b86a3)
+        ;
+
+        
+    
+    
+            var circle_c4dc1bed80db9b5c5c23ff2afaf36cd3 = L.circle(
+                [83.7714, 18.591],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_1f9bc21227544cebe09ea83fa0806b3c);
+        
+    
+        var popup_c66fe54e8779b2652839a61d4065d797 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55f85e402e089d2ab5859edc8b0dbd6c = $(`<div id="html_55f85e402e089d2ab5859edc8b0dbd6c" style="width: 100.0%; height: 100.0%;">SRIKAKULAM,ANDHRA PRADESH</div>`)[0];
+                popup_c66fe54e8779b2652839a61d4065d797.setContent(html_55f85e402e089d2ab5859edc8b0dbd6c);
+            
+        
+
+        circle_c4dc1bed80db9b5c5c23ff2afaf36cd3.bindPopup(popup_c66fe54e8779b2652839a61d4065d797)
+        ;
+
+        
+    
+    
+            var marker_928d2a699eccc11effc308296a363952 = L.marker(
+                [83.7691, 18.565],
+                {}
+            ).addTo(map_1f9bc21227544cebe09ea83fa0806b3c);
+        
+    
+            var icon_d5cb6f1854aa69200bc0f0596011b565 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_928d2a699eccc11effc308296a363952.setIcon(icon_d5cb6f1854aa69200bc0f0596011b565);
+        
+    
+        var popup_3ca394f15fd12735bee798428a4096a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_124e60fefaf52644f78315511c9ae6ef = $(`<div id="html_124e60fefaf52644f78315511c9ae6ef" style="width: 100.0%; height: 100.0%;">SRIKAKULAM,ANDHRA PRADESH,Latitude     83.7691 Longitude     18.565 Name: 6, dtype: object</div>`)[0];
+                popup_3ca394f15fd12735bee798428a4096a2.setContent(html_124e60fefaf52644f78315511c9ae6ef);
+            
+        
+
+        marker_928d2a699eccc11effc308296a363952.bindPopup(popup_3ca394f15fd12735bee798428a4096a2)
+        ;
+
+        
+    
+    
+            var circle_58bbefac3e1808175baf4c368dc6c381 = L.circle(
+                [83.7691, 18.565],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_1f9bc21227544cebe09ea83fa0806b3c);
+        
+    
+        var popup_7db0051da7e2297f1aef2901c3cbc69b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_380f09f5ece290c4551b1659903a14a1 = $(`<div id="html_380f09f5ece290c4551b1659903a14a1" style="width: 100.0%; height: 100.0%;">SRIKAKULAM,ANDHRA PRADESH</div>`)[0];
+                popup_7db0051da7e2297f1aef2901c3cbc69b.setContent(html_380f09f5ece290c4551b1659903a14a1);
+            
+        
+
+        circle_58bbefac3e1808175baf4c368dc6c381.bindPopup(popup_7db0051da7e2297f1aef2901c3cbc69b)
+        ;
+
+        
+    
+    
+            var marker_c34c3e5d9b61fd2865843cd35a9532e6 = L.marker(
+                [83.7263, 18.5727],
+                {}
+            ).addTo(map_1f9bc21227544cebe09ea83fa0806b3c);
+        
+    
+            var icon_c13eff0d4eb4d9a382527e0a29c39204 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c34c3e5d9b61fd2865843cd35a9532e6.setIcon(icon_c13eff0d4eb4d9a382527e0a29c39204);
+        
+    
+        var popup_5f53a9b5a09b4d2fe8f011b3e6441707 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57c435e45f4da557966a0019a905579c = $(`<div id="html_57c435e45f4da557966a0019a905579c" style="width: 100.0%; height: 100.0%;">SRIKAKULAM,ANDHRA PRADESH,Latitude     83.7263 Longitude    18.5727 Name: 7, dtype: object</div>`)[0];
+                popup_5f53a9b5a09b4d2fe8f011b3e6441707.setContent(html_57c435e45f4da557966a0019a905579c);
+            
+        
+
+        marker_c34c3e5d9b61fd2865843cd35a9532e6.bindPopup(popup_5f53a9b5a09b4d2fe8f011b3e6441707)
+        ;
+
+        
+    
+    
+            var circle_cff866fbcfeb65044cc38d5339a1f2df = L.circle(
+                [83.7263, 18.5727],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_1f9bc21227544cebe09ea83fa0806b3c);
+        
+    
+        var popup_a08e8f7e4fa2b13d2a2ac1858c6a4e70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_22aa6097038ea78e9f69760cc3d5ee3b = $(`<div id="html_22aa6097038ea78e9f69760cc3d5ee3b" style="width: 100.0%; height: 100.0%;">SRIKAKULAM,ANDHRA PRADESH</div>`)[0];
+                popup_a08e8f7e4fa2b13d2a2ac1858c6a4e70.setContent(html_22aa6097038ea78e9f69760cc3d5ee3b);
+            
+        
+
+        circle_cff866fbcfeb65044cc38d5339a1f2df.bindPopup(popup_a08e8f7e4fa2b13d2a2ac1858c6a4e70)
+        ;
+
+        
+    
+    
+            var marker_46c70d9971e14ae9f2771e5064b49280 = L.marker(
+                [83.7264, 18.5728],
+                {}
+            ).addTo(map_1f9bc21227544cebe09ea83fa0806b3c);
+        
+    
+            var icon_70712a463ade02d3027824387eaeafc0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_46c70d9971e14ae9f2771e5064b49280.setIcon(icon_70712a463ade02d3027824387eaeafc0);
+        
+    
+        var popup_bf9348f7a06627d4528a2f21a7b4d8d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e3de7ce9601b1a2e395ddd02ffb0641 = $(`<div id="html_8e3de7ce9601b1a2e395ddd02ffb0641" style="width: 100.0%; height: 100.0%;">SRIKAKULAM,ANDHRA PRADESH,Latitude     83.7264 Longitude    18.5728 Name: 8, dtype: object</div>`)[0];
+                popup_bf9348f7a06627d4528a2f21a7b4d8d2.setContent(html_8e3de7ce9601b1a2e395ddd02ffb0641);
+            
+        
+
+        marker_46c70d9971e14ae9f2771e5064b49280.bindPopup(popup_bf9348f7a06627d4528a2f21a7b4d8d2)
+        ;
+
+        
+    
+    
+            var circle_bf3a760a81f4476543747c359250d764 = L.circle(
+                [83.7264, 18.5728],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_1f9bc21227544cebe09ea83fa0806b3c);
+        
+    
+        var popup_f12081943a03f0ebf029a74cb72fffc3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81610a074108295d6c9a11b4f4900824 = $(`<div id="html_81610a074108295d6c9a11b4f4900824" style="width: 100.0%; height: 100.0%;">SRIKAKULAM,ANDHRA PRADESH</div>`)[0];
+                popup_f12081943a03f0ebf029a74cb72fffc3.setContent(html_81610a074108295d6c9a11b4f4900824);
+            
+        
+
+        circle_bf3a760a81f4476543747c359250d764.bindPopup(popup_f12081943a03f0ebf029a74cb72fffc3)
+        ;
+
+        
+    
+    
+            var marker_fdf5a12ca292af2edb1245a90792f80d = L.marker(
+                [83.7756, 18.5423],
+                {}
+            ).addTo(map_1f9bc21227544cebe09ea83fa0806b3c);
+        
+    
+            var icon_fbb00ce10f2d454068deee2027e26c6d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fdf5a12ca292af2edb1245a90792f80d.setIcon(icon_fbb00ce10f2d454068deee2027e26c6d);
+        
+    
+        var popup_b36bc4ebfe3e48787cff9a2ea1b8f126 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_28ca3f96a0d0311d32f92bfbdef4e077 = $(`<div id="html_28ca3f96a0d0311d32f92bfbdef4e077" style="width: 100.0%; height: 100.0%;">SRIKAKULAM,ANDHRA PRADESH,Latitude     83.7756 Longitude    18.5423 Name: 9, dtype: object</div>`)[0];
+                popup_b36bc4ebfe3e48787cff9a2ea1b8f126.setContent(html_28ca3f96a0d0311d32f92bfbdef4e077);
+            
+        
+
+        marker_fdf5a12ca292af2edb1245a90792f80d.bindPopup(popup_b36bc4ebfe3e48787cff9a2ea1b8f126)
+        ;
+
+        
+    
+    
+            var circle_789a874385c4c5e5a2f7187492c3b691 = L.circle(
+                [83.7756, 18.5423],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_1f9bc21227544cebe09ea83fa0806b3c);
+        
+    
+        var popup_fb2b3696e8bff82d19386b1deed479ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c317a06ef866b7d447980b32f591b4bd = $(`<div id="html_c317a06ef866b7d447980b32f591b4bd" style="width: 100.0%; height: 100.0%;">SRIKAKULAM,ANDHRA PRADESH</div>`)[0];
+                popup_fb2b3696e8bff82d19386b1deed479ae.setContent(html_c317a06ef866b7d447980b32f591b4bd);
+            
+        
+
+        circle_789a874385c4c5e5a2f7187492c3b691.bindPopup(popup_fb2b3696e8bff82d19386b1deed479ae)
+        ;
+
+        
+    
+    
+            var marker_7bac0517f41b91ade5c47f96178168a1 = L.marker(
+                [83.7715, 18.5911],
+                {}
+            ).addTo(map_1f9bc21227544cebe09ea83fa0806b3c);
+        
+    
+            var icon_fdffa139f9021de99a6c5dffaad103cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7bac0517f41b91ade5c47f96178168a1.setIcon(icon_fdffa139f9021de99a6c5dffaad103cd);
+        
+    
+        var popup_c372bef4df4bf197ca4391e328e07e24 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a867863f2e9e9c7057664c78595b051c = $(`<div id="html_a867863f2e9e9c7057664c78595b051c" style="width: 100.0%; height: 100.0%;">SRIKAKULAM,ANDHRA PRADESH,Latitude     83.7715 Longitude    18.5911 Name: 10, dtype: object</div>`)[0];
+                popup_c372bef4df4bf197ca4391e328e07e24.setContent(html_a867863f2e9e9c7057664c78595b051c);
+            
+        
+
+        marker_7bac0517f41b91ade5c47f96178168a1.bindPopup(popup_c372bef4df4bf197ca4391e328e07e24)
+        ;
+
+        
+    
+    
+            var circle_1fe8143fdd2bf869df6eaef221865348 = L.circle(
+                [83.7715, 18.5911],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_1f9bc21227544cebe09ea83fa0806b3c);
+        
+    
+        var popup_d42fc4586eff54f4b24353260e7420e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b8831c92bb4027a100d400ce8dd7901 = $(`<div id="html_3b8831c92bb4027a100d400ce8dd7901" style="width: 100.0%; height: 100.0%;">SRIKAKULAM,ANDHRA PRADESH</div>`)[0];
+                popup_d42fc4586eff54f4b24353260e7420e7.setContent(html_3b8831c92bb4027a100d400ce8dd7901);
+            
+        
+
+        circle_1fe8143fdd2bf869df6eaef221865348.bindPopup(popup_d42fc4586eff54f4b24353260e7420e7)
+        ;
+
+        
+    
+    
+            var marker_2d32e3a1067048d4627fff2fb70e962e = L.marker(
+                [83.7233, 18.6217],
+                {}
+            ).addTo(map_1f9bc21227544cebe09ea83fa0806b3c);
+        
+    
+            var icon_22fa38702bb08defb30251f4b1684437 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2d32e3a1067048d4627fff2fb70e962e.setIcon(icon_22fa38702bb08defb30251f4b1684437);
+        
+    
+        var popup_bf8449a2ae9980d430b92a515c96c139 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b335c8619d55ed7a6a81631d0069f092 = $(`<div id="html_b335c8619d55ed7a6a81631d0069f092" style="width: 100.0%; height: 100.0%;">SRIKAKULAM,ANDHRA PRADESH,Latitude     83.7233 Longitude    18.6217 Name: 11, dtype: object</div>`)[0];
+                popup_bf8449a2ae9980d430b92a515c96c139.setContent(html_b335c8619d55ed7a6a81631d0069f092);
+            
+        
+
+        marker_2d32e3a1067048d4627fff2fb70e962e.bindPopup(popup_bf8449a2ae9980d430b92a515c96c139)
+        ;
+
+        
+    
+    
+            var circle_01566fb176ef186c6b2fe7ccf0b5a701 = L.circle(
+                [83.7233, 18.6217],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_1f9bc21227544cebe09ea83fa0806b3c);
+        
+    
+        var popup_1b67b9c82db93c0a177e3dcde32e90b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c960dab7dea28c5ee28932e94c4f146c = $(`<div id="html_c960dab7dea28c5ee28932e94c4f146c" style="width: 100.0%; height: 100.0%;">SRIKAKULAM,ANDHRA PRADESH</div>`)[0];
+                popup_1b67b9c82db93c0a177e3dcde32e90b6.setContent(html_c960dab7dea28c5ee28932e94c4f146c);
+            
+        
+
+        circle_01566fb176ef186c6b2fe7ccf0b5a701.bindPopup(popup_1b67b9c82db93c0a177e3dcde32e90b6)
+        ;
+
+        
+    
+    
+            var marker_9815c995f9fd5613d704f96e04ac3a29 = L.marker(
+                [83.7315, 18.6318],
+                {}
+            ).addTo(map_1f9bc21227544cebe09ea83fa0806b3c);
+        
+    
+            var icon_90395e488d5a7d4c93159855f0c6276f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9815c995f9fd5613d704f96e04ac3a29.setIcon(icon_90395e488d5a7d4c93159855f0c6276f);
+        
+    
+        var popup_377c49254451749a896531d70bb0b505 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44148b68cb465426a753c871e8ea5930 = $(`<div id="html_44148b68cb465426a753c871e8ea5930" style="width: 100.0%; height: 100.0%;">SRIKAKULAM,ANDHRA PRADESH,Latitude     83.7315 Longitude    18.6318 Name: 12, dtype: object</div>`)[0];
+                popup_377c49254451749a896531d70bb0b505.setContent(html_44148b68cb465426a753c871e8ea5930);
+            
+        
+
+        marker_9815c995f9fd5613d704f96e04ac3a29.bindPopup(popup_377c49254451749a896531d70bb0b505)
+        ;
+
+        
+    
+    
+            var circle_a0fe6f58bfd76e77da2f841db9c8fef5 = L.circle(
+                [83.7315, 18.6318],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_1f9bc21227544cebe09ea83fa0806b3c);
+        
+    
+        var popup_5fed18a33286497a333ca1816569abcd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fcc8c3550784f86c23f699919cc4983d = $(`<div id="html_fcc8c3550784f86c23f699919cc4983d" style="width: 100.0%; height: 100.0%;">SRIKAKULAM,ANDHRA PRADESH</div>`)[0];
+                popup_5fed18a33286497a333ca1816569abcd.setContent(html_fcc8c3550784f86c23f699919cc4983d);
+            
+        
+
+        circle_a0fe6f58bfd76e77da2f841db9c8fef5.bindPopup(popup_5fed18a33286497a333ca1816569abcd)
+        ;
+
+        
+    
+    
+            var marker_2029a9b30624562f3ba98277b835ca61 = L.marker(
+                [18.58839375, 83.742025],
+                {}
+            ).addTo(map_1f9bc21227544cebe09ea83fa0806b3c);
+        
+    
+            var icon_57a58788e3a6f4e0cf2d083a00f924a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2029a9b30624562f3ba98277b835ca61.setIcon(icon_57a58788e3a6f4e0cf2d083a00f924a8);
+        
+    
+        var popup_49b869dd494103a842c9b908629d646b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1172f830e79c85dbe47f8f99260ae08a = $(`<div id="html_1172f830e79c85dbe47f8f99260ae08a" style="width: 100.0%; height: 100.0%;">SRIKAKULAM,ANDHRA PRADESH,Latitude     18.588394 Longitude    83.742025 Name: 13, dtype: object</div>`)[0];
+                popup_49b869dd494103a842c9b908629d646b.setContent(html_1172f830e79c85dbe47f8f99260ae08a);
+            
+        
+
+        marker_2029a9b30624562f3ba98277b835ca61.bindPopup(popup_49b869dd494103a842c9b908629d646b)
+        ;
+
+        
+    
+    
+            var circle_516b4d8c34dc2facd6f901ca6098c97d = L.circle(
+                [18.58839375, 83.742025],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_1f9bc21227544cebe09ea83fa0806b3c);
+        
+    
+        var popup_186f036357616dcf39de1f9790e56941 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e38255bb08b78ec5f91ebb21e813c84 = $(`<div id="html_8e38255bb08b78ec5f91ebb21e813c84" style="width: 100.0%; height: 100.0%;">SRIKAKULAM,ANDHRA PRADESH</div>`)[0];
+                popup_186f036357616dcf39de1f9790e56941.setContent(html_8e38255bb08b78ec5f91ebb21e813c84);
+            
+        
+
+        circle_516b4d8c34dc2facd6f901ca6098c97d.bindPopup(popup_186f036357616dcf39de1f9790e56941)
+        ;
+
+        
+    
+    
+            var marker_a426aea7f0bfa3411107f420f4cc52c3 = L.marker(
+                [18.60375, 83.7563333],
+                {}
+            ).addTo(map_1f9bc21227544cebe09ea83fa0806b3c);
+        
+    
+            var icon_b25f8879c1d5f2d50eec4117b234726b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a426aea7f0bfa3411107f420f4cc52c3.setIcon(icon_b25f8879c1d5f2d50eec4117b234726b);
+        
+    
+        var popup_03d5b90712f8199dfc298a44dee4156b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5739c6b09410b71c87d79cd0b647a529 = $(`<div id="html_5739c6b09410b71c87d79cd0b647a529" style="width: 100.0%; height: 100.0%;">SRIKAKULAM,ANDHRA PRADESH,Latitude       18.60375 Longitude    83.7563333 Name: 14, dtype: object</div>`)[0];
+                popup_03d5b90712f8199dfc298a44dee4156b.setContent(html_5739c6b09410b71c87d79cd0b647a529);
+            
+        
+
+        marker_a426aea7f0bfa3411107f420f4cc52c3.bindPopup(popup_03d5b90712f8199dfc298a44dee4156b)
+        ;
+
+        
+    
+    
+            var circle_d29cd6b3be5bb97617e6c6218821e1ee = L.circle(
+                [18.60375, 83.7563333],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_1f9bc21227544cebe09ea83fa0806b3c);
+        
+    
+        var popup_7e1be18c70bb38cb3d5d423fbc20635b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dfe45309a14f79ffe141c245b1e71fc3 = $(`<div id="html_dfe45309a14f79ffe141c245b1e71fc3" style="width: 100.0%; height: 100.0%;">SRIKAKULAM,ANDHRA PRADESH</div>`)[0];
+                popup_7e1be18c70bb38cb3d5d423fbc20635b.setContent(html_dfe45309a14f79ffe141c245b1e71fc3);
+            
+        
+
+        circle_d29cd6b3be5bb97617e6c6218821e1ee.bindPopup(popup_7e1be18c70bb38cb3d5d423fbc20635b)
+        ;
+
+        
+    
+</script>
+</html>
